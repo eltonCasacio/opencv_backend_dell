@@ -1,0 +1,11 @@
+pip install --upgrade <nome do pacote> => atualiza pacote
+pip list --outdated             => lista dependencias que podem ser atualizadas
+pip freeze                      => lista as dependencias
+python -m venv .venv            => cria pasta para ambiente virtual
+source .venv/bin/activate       => ativa o ambiente virtual
+pip install -r requirements.txt => instala dependencias
+deactivate  => desativa
+
+pip install pycomm3 
+python pip install rich  
+pip install pymysql

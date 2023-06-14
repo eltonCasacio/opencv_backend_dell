@@ -1,0 +1,308 @@
+<form method="post">
+  <div class="inputsTrack">
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> L - Vermelho </span>
+        <span class="bound_label_Right">255</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar1 }}</h4>
+        <input type="range" min="0" max="255" name="trackbar1" value="{{ varTrackbar1 }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="255" name="number1" value="{{ varTrackbar1 }}" onchange="send()">
+      </div>
+    </div>
+
+    {% include "components/cardinputTrack.html" %}
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> L - Azul </span>
+        <span class="bound_label_Right">255</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar3 }}</h4>
+        <input type="range" min="0" max="255" name="trackbar3" value="{{ varTrackbar3 }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="255" name="number3" value="{{ varTrackbar3 }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> U - Vermelho </span>
+        <span class="bound_label_Right">255</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar4 }}</h4>
+        <input type="range" min="0" max="255" name="trackbar4" value="{{ varTrackbar4 }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="255" name="number4" value="{{ varTrackbar4 }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> U - Verde </span>
+        <span class="bound_label_Right">255</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar5 }}</h4>
+        <input type="range" min="0" max="255" name="trackbar5" value="{{ varTrackbar5 }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="255" name="number5" value="{{ varTrackbar5 }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> U - Azul </span>
+        <span class="bound_label_Right">255</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar6 }}</h4>
+        <input type="range" min="0" max="255" name="trackbar6" value="{{ varTrackbar6 }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="255" name="number6" value="{{ varTrackbar6 }}" onchange="send()">
+      </div>
+    </div>
+  </div>
+
+  <div class="inputsTrack">
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tam. Min. LV </span>
+        <span class="bound_label_Right">3000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_TamMinLv }}</h4>
+        <input type="range" min="0" max="3000" name="trackbar_TamMinLv" value="{{ varTrackbar_TamMinLv }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="3000" name="number_TamMinLv" value="{{ varTrackbar_TamMinLv }}"
+          onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tam. Max. LV </span>
+        <span class="bound_label_Right">3000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_TamMaxLv }}</h4>
+        <input type="range" min="0" max="3000" name="trackbar_TamMaxLv" value="{{ varTrackbar_TamMaxLv }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="3000" name="number_TamMaxLv" value="{{ varTrackbar_TamMaxLv }}"
+          onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tam. Min. LH </span>
+        <span class="bound_label_Right">3000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_TamMinLh }}</h4>
+        <input type="range" min="0" max="3000" name="trackbar_TamMinLh" value="{{ varTrackbar_TamMinLh }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="3000" name="number_TamMinLh" value="{{ varTrackbar_TamMinLh }}"
+          onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tam. Max. LH </span>
+        <span class="bound_label_Right">3000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_TamMaxLh }}</h4>
+        <input type="range" min="0" max="3000" name="trackbar_TamMaxLh" value="{{ varTrackbar_TamMaxLh }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="3000" name="number_TamMaxLh" value="{{ varTrackbar_TamMaxLh }}"
+          onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tam. Min </span>
+        <span class="bound_label_Right">3000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_TamMin }}</h4>
+        <input type="range" min="0" max="3000" name="trackbar_TamMin" value="{{ varTrackbar_TamMin }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="3000" name="number_TamMin" value="{{ varTrackbar_TamMin }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tam. Max </span>
+        <span class="bound_label_Right">100000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_TamMax }}</h4>
+        <input type="range" min="0" max="100000" name="trackbar_TamMax" value="{{ varTrackbar_TamMax }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="100000" name="number_TamMax" value="{{ varTrackbar_TamMax }}"
+          onchange="send()">
+      </div>
+    </div>
+  </div>
+
+  <div class="inputsTrack">
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Iterations erode </span>
+        <span class="bound_label_Right">10</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_iterations_erode }}</h4>
+        <input type="range" min="0" max="10" name="trackbar_iterations_erode" value="{{ varTrackbar_iterations_erode }}"
+          onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="10" name="number_iterations_erode" value="{{ varTrackbar_iterations_erode }}"
+          onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Iterations dilate </span>
+        <span class="bound_label_Right">10</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_iterations_dilate }}</h4>
+        <input type="range" min="0" max="10" name="trackbar_iterations_dilate"
+          value="{{ varTrackbar_iterations_dilate }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="10" name="number_iterations_dilate"
+          value="{{ varTrackbar_iterations_dilate }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tamanho linha horizontal </span>
+        <span class="bound_label_Right">1000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_LineHorizontal }}</h4>
+        <input type="range" min="0" max="1000" name="trackbar_LineHorizontal"
+          value="{{ varTrackbar_LineHorizontal }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="1000" name="number_LineHorizontal"
+          value="{{ varTrackbar_LineHorizontal }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Tamanho linha vertical </span>
+        <span class="bound_label_Right">1000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_LineVertical }}</h4>
+        <input type="range" min="0" max="1000" name="trackbar_LineVertical"
+          value="{{ varTrackbar_LineVertical }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="1000" name="number_LineVertical"
+          value="{{ varTrackbar_LineVertical }}" onchange="send()">
+      </div>
+    </div>
+
+    <div class=inputTrack>
+      <div class="labelRange">
+        <span class="bound_label_Left">0</span>
+        <span> Range tamanho linha </span>
+        <span class="bound_label_Right">1000</span>
+      </div>
+      <div class="valueRange">
+        <h4>{{ varTrackbar_LineRange }}</h4>
+        <input type="range" min="0" max="1000" name="trackbar_LineRange"
+          value="{{ varTrackbar_LineRange }}" onchange="send()">
+      </div>
+      <div class="valueRange">
+        <input type="number" min="0" max="1000" name="number_LineRange"
+          value="{{ varTrackbar_LineRange }}" onchange="send()">
+      </div>
+    </div>
+  </div>
+</form>
+
+<form id="formSalvar" method="post">
+  <div id="btSalvar-container">
+    <input name=parameters_name type="text" value="{{ varname }}" onchange="sendName()"/>
+    <button name="btSalvar" type="button" onclick="save()">SALVAR</button>
+    <div id="parametro-container">
+  </div>
+</form>
+
+<form id="selectNameParameter" method="post">
+  <div id="select-parametro-container">
+    <label for="parametros-select">Selecao de parametro</label>
+    <select name="parametrosSelect" onchange="callParameters()">
+      {% for name in nameParameters %}
+      <option value="{{name.0}}">{{name.1}}</option>
+      {% endfor %}
+    </select>
+  </div>
+</form>
+
+<script>
+  function send() {
+    document.querySelector("form").submit()
+  }
+
+  function sendName() {
+    document.querySelector("#formSalvar").submit()
+  }
+
+  function save() {
+    fetch("/form-salvar")
+  }
+
+  function callParameters(){
+    document.querySelector("#selectNameParameter").submit()  
+  }
+
+</script>

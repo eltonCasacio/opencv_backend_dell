@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    tty: true
+    platform: linux/amd64
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: db_opencvroboxyzdell
+      MYSQL_PASSWORD: admin
+    ports:
+      - 3306:3306
