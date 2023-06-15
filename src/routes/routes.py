@@ -18,21 +18,28 @@ def init_app(app):
     def l():
         request_data = request.get_json()
         color = request_data["color"]
-        value = request_data["value"]
+        low = request_data["low"]
+        hight = request_data["hight"]
 
         match color:
             case "vermelho":
-                if (value != None):
-                    if (controllers.adjustmentPanel.varTrackbar1 != int(value)):
-                        controllers.adjustmentPanel.varTrackbar1 = int(value)
+                if (low != None and hight != None):
+                    if (controllers.adjustmentPanel.varTrackbar1 != int(low)):
+                        controllers.adjustmentPanel.varTrackbar1 = int(low)
+                    if (controllers.adjustmentPanel.varTrackbar4 != int(hight)):
+                        controllers.adjustmentPanel.varTrackbar4 = int(hight)
             case "verde":
-                if (value != None):
-                    if (controllers.adjustmentPanel.varTrackbar2 != int(value)):
-                        controllers.adjustmentPanel.varTrackbar2 = int(value)
+                if (low != None and hight != None):
+                    if (controllers.adjustmentPanel.varTrackbar2 != int(low)):
+                        controllers.adjustmentPanel.varTrackbar2 = int(low)
+                    if (controllers.adjustmentPanel.varTrackbar5 != int(hight)):
+                        controllers.adjustmentPanel.varTrackbar5 = int(hight)
             case "azul":
-                if (value != None):
-                    if (controllers.adjustmentPanel.varTrackbar3 != int(value)):
-                        controllers.adjustmentPanel.varTrackbar3 = int(value)
+                if (low != None and hight != None):
+                    if (controllers.adjustmentPanel.varTrackbar3 != int(low)):
+                        controllers.adjustmentPanel.varTrackbar3 = int(low)
+                    if (controllers.adjustmentPanel.varTrackbar6 != int(hight)):
+                        controllers.adjustmentPanel.varTrackbar6 = int(hight)
 
         return 'ok'
 
@@ -47,53 +54,53 @@ def init_app(app):
                 selectRow_SearchForID.Select(
                     int(request.form.get("parametrosSelect")))
 
-            if (request.form.get("trackbar1") != None):
-                if (controllers.adjustmentPanel.varTrackbar1 != int(request.form.get("trackbar1"))):
-                    controllers.adjustmentPanel.varTrackbar1 = int(
-                        request.form.get("trackbar1"))
-                elif (controllers.adjustmentPanel.varTrackbar1 != int(request.form.get("number1"))):
-                    controllers.adjustmentPanel.varTrackbar1 = int(
-                        request.form.get("number1"))
+            # if (request.form.get("trackbar1") != None):
+            #     if (controllers.adjustmentPanel.varTrackbar1 != int(request.form.get("trackbar1"))):
+            #         controllers.adjustmentPanel.varTrackbar1 = int(
+            #             request.form.get("trackbar1"))
+            #     elif (controllers.adjustmentPanel.varTrackbar1 != int(request.form.get("number1"))):
+            #         controllers.adjustmentPanel.varTrackbar1 = int(
+            #             request.form.get("number1"))
 
-            if (request.form.get("trackbar2") != None):
-                if (controllers.adjustmentPanel.varTrackbar2 != int(request.form.get("trackbar2"))):
-                    controllers.adjustmentPanel.varTrackbar2 = int(
-                        request.form.get("trackbar2"))
-                elif (controllers.adjustmentPanel.varTrackbar2 != int(request.form.get("number2"))):
-                    controllers.adjustmentPanel.varTrackbar2 = int(
-                        request.form.get("number2"))
+            # if (request.form.get("trackbar2") != None):
+            #     if (controllers.adjustmentPanel.varTrackbar2 != int(request.form.get("trackbar2"))):
+            #         controllers.adjustmentPanel.varTrackbar2 = int(
+            #             request.form.get("trackbar2"))
+            #     elif (controllers.adjustmentPanel.varTrackbar2 != int(request.form.get("number2"))):
+            #         controllers.adjustmentPanel.varTrackbar2 = int(
+            #             request.form.get("number2"))
 
-            if (request.form.get("trackbar3") != None):
-                if (controllers.adjustmentPanel.varTrackbar3 != int(request.form.get("trackbar3"))):
-                    controllers.adjustmentPanel.varTrackbar3 = int(
-                        request.form.get("trackbar3"))
-                elif (controllers.adjustmentPanel.varTrackbar3 != int(request.form.get("number3"))):
-                    controllers.adjustmentPanel.varTrackbar3 = int(
-                        request.form.get("number3"))
+            # if (request.form.get("trackbar3") != None):
+            #     if (controllers.adjustmentPanel.varTrackbar3 != int(request.form.get("trackbar3"))):
+            #         controllers.adjustmentPanel.varTrackbar3 = int(
+            #             request.form.get("trackbar3"))
+            #     elif (controllers.adjustmentPanel.varTrackbar3 != int(request.form.get("number3"))):
+            #         controllers.adjustmentPanel.varTrackbar3 = int(
+            #             request.form.get("number3"))
 
-            if (request.form.get("trackbar4") != None):
-                if (controllers.adjustmentPanel.varTrackbar4 != int(request.form.get("trackbar4"))):
-                    controllers.adjustmentPanel.varTrackbar4 = int(
-                        request.form.get("trackbar4"))
-                elif (controllers.adjustmentPanel.varTrackbar4 != int(request.form.get("number4"))):
-                    controllers.adjustmentPanel.varTrackbar4 = int(
-                        request.form.get("number4"))
+            # if (request.form.get("trackbar4") != None):
+            #     if (controllers.adjustmentPanel.varTrackbar4 != int(request.form.get("trackbar4"))):
+            #         controllers.adjustmentPanel.varTrackbar4 = int(
+            #             request.form.get("trackbar4"))
+            #     elif (controllers.adjustmentPanel.varTrackbar4 != int(request.form.get("number4"))):
+            #         controllers.adjustmentPanel.varTrackbar4 = int(
+            #             request.form.get("number4"))
 
-            if (request.form.get("trackbar5") != None):
-                if (controllers.adjustmentPanel.varTrackbar5 != int(request.form.get("trackbar5"))):
-                    controllers.adjustmentPanel.varTrackbar5 = int(
-                        request.form.get("trackbar5"))
-                elif (controllers.adjustmentPanel.varTrackbar5 != int(request.form.get("number5"))):
-                    controllers.adjustmentPanel.varTrackbar5 = int(
-                        request.form.get("number5"))
+            # if (request.form.get("trackbar5") != None):
+            #     if (controllers.adjustmentPanel.varTrackbar5 != int(request.form.get("trackbar5"))):
+            #         controllers.adjustmentPanel.varTrackbar5 = int(
+            #             request.form.get("trackbar5"))
+            #     elif (controllers.adjustmentPanel.varTrackbar5 != int(request.form.get("number5"))):
+            #         controllers.adjustmentPanel.varTrackbar5 = int(
+            #             request.form.get("number5"))
 
-            if (request.form.get("trackbar6") != None):
-                if (controllers.adjustmentPanel.varTrackbar6 != int(request.form.get("trackbar6"))):
-                    controllers.adjustmentPanel.varTrackbar6 = int(
-                        request.form.get("trackbar6"))
-                elif (controllers.adjustmentPanel.varTrackbar6 != int(request.form.get("number6"))):
-                    controllers.adjustmentPanel.varTrackbar6 = int(
-                        request.form.get("number6"))
+            # if (request.form.get("trackbar6") != None):
+            #     if (controllers.adjustmentPanel.varTrackbar6 != int(request.form.get("trackbar6"))):
+            #         controllers.adjustmentPanel.varTrackbar6 = int(
+            #             request.form.get("trackbar6"))
+            #     elif (controllers.adjustmentPanel.varTrackbar6 != int(request.form.get("number6"))):
+            #         controllers.adjustmentPanel.varTrackbar6 = int(
+            #             request.form.get("number6"))
 
             if (request.form.get("trackbar_TamMinLv") != None):
                 if (controllers.adjustmentPanel.varTrackbar_TamMinLv != int(request.form.get("trackbar_TamMinLv"))):
