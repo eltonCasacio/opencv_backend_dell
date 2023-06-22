@@ -12,8 +12,6 @@ class selectRow_SearchForID():
                 "SELECT * FROM parametersAdjustFilterImg WHERE id = %s", (id,))
             data = cur.fetchone()
 
-            print(data)
-
             controllers.adjustmentPanel.varname = data[1]
             controllers.adjustmentPanel.varTrackbar1 = data[2]
             controllers.adjustmentPanel.varTrackbar2 = data[3]
