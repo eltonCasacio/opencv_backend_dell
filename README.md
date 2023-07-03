@@ -1,6 +1,7 @@
-# Sistema de visão computacional
+## Sistema de visão computacional
+**Tem outro repositório com a mesma ideia feito em [Go](https://github.com/eltonCasacio/gocv), de uma olhada  ;]** 
 
-## Executando
+### Executando
 
 1. clone esse repositorio
 2. dentro do projeto execute: `python -m venv .venv` para criar ambiente virtual
