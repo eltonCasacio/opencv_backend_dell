@@ -23,4 +23,4 @@
 8. entre no diretorio src e execute `python app.py -i localhost -o 8000`
 9. server up on http://localhost:8000
 
-***Veja o repositorio do front*** 
+***Veja o repositorio do front*** [aqui](https://github.com/eltonCasacio/opencv_front_dell)  
