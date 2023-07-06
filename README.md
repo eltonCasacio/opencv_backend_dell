@@ -5,7 +5,7 @@
 
 1. clone esse repositorio
 2. dentro do projeto execute: `python -m venv .venv` para criar ambiente virtual
-3. se estiver utilizando macbook, rode `source .venv/bin/activate`, windows `.venv/bin/activate` para ativar o ambiente virtual
+3. se estiver utilizando macbook, rode `source .venv/bin/activate`, windows `.venv\Scripts\activate` para ativar o ambiente virtual
 4. caso necessário, instale essas dependencias:
    - `pip install Flask-Cors`
    - `pip install imutils`
